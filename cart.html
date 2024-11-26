@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleCart.css">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/"><img src="imgs/somelogo.png" alt="logo"></a>
+            <div class="menu-mobile" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/shop.html">SHOP</a></li>
+                <li><a href="/login.html">CONTA</a></li> 
+                <li><a href="/sobre.html">SOBRE</a></li>
+                <li><a href="/cart.html">CARRINHO</a></li>
+            </ul>            
+        </nav>
+    </header>
+                <main>
+                    <div class="container">
+                        <h1>Carrinho de Compras</h1>
+                        <div class="cart">
+                            <h2>Carrinho</h2>
+                            <div id="cart-items"></div>
+                            <div class="cart-summary">
+                                <h3>Total: BRL <span id="total">0.00</span></h3>
+                                <a href="checkout.html"><button class="checkout">Finalizar Compra</button></a>                                
+                            </div>
+                        </div>
+                    </div>
+                </main>
+        
+<footer class="footer">
+    <div class="footer-content">
+        <p><a href="#">CONTATO</a></p>
+        <p><a href="#">Termos & Condições</a></p>
+        <p><a href="#">Trocas & Devoluções</a></p>
+    </div>
+</footer>
+
+    <script src="js/product.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

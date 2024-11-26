@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Checkout - Sometimes</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/checkout.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <link rel="stylesheet" href="sweetalert2.min.css">
+   </head>
+   <body>
+
+
+      <header>
+         <nav>
+            <a class="logo" href="/"><img src="imgs/somelogo.png" alt="logo"></a>
+            <div class="menu-mobile" id="menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <ul class="nav-list" id="nav-list">
+               <li><a href="/">INICIO</a></li>
+               <li><a href="/shop.html">SHOP</a></li>
+               <li><a href="/login.html">CONTA</a></li>
+               <li><a href="/sobre.html">SOBRE</a></li>
+               <li><a href="/cart.html">CARRINHO</a></li>
+            </ul>
+         </nav>
+      </header>
+      
+
+      <main>
+         <div class="container">
+            <h1>Finalizar Compra</h1>
+            <div class="checkout">
+               <div class="checkout-left">
+                  <div class="checkout-summary">
+                     <h2>Resumo do Pedido</h2>
+                     <div id="order-summary-items"></div>
+                     <div class="order-total">
+                        <h3>Total: <span id="order-total">0.00</span></h3>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="checkout-right">
+                  <h2>Informações de Pagamento e Envio</h2>
+
+                  <form action="#" method="POST">
+                     <label for="name">Nome Completo:</label>
+                     <input type="text" id="name" name="name" required>
+
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" required>
+
+                     <label for="address">Endereço:</label>
+                     <input type="text" id="address" name="address" required>
+
+                     <label for="zip">CEP:</label>
+                     <input type="text" id="zip" name="zip" required>
+
+                     <label for="city">Cidade:</label>
+                     <input type="text" id="city" name="city" required>
+                     </select>
+
+                     <label for="frete">Método de Frete:</label>
+                     <select id="frete" name="frete">
+                        <option value="standard">DHL</option>
+                        <option value="express">Sedex</option>
+                     </select>
+
+                     <div class="save-info">
+                        <input type="checkbox" id="save-info" name="save-info">
+                        <label for="save-info">Salvar minhas informações para futuras compras</label>
+                     </div>
+
+                     <h3>Pagamento</h3>
+                     <label for="card-number">Número do Cartão:</label>
+                     <input type="text" id="card-number" name="card-number" required>
+
+                     <label for="card-expiry">Data de Validade:</label>
+                     <input type="month" id="card-expiry" name="card-expiry" required>
+
+                     <label for="card-cvc">CVV:</label>
+                     <input type="text" id="card-cvc" name="card-cvc" required>
+
+                    <!-- botao do SweetAlert2 -->
+                     <button type="submit" class="submit-order">Finalizar Compra</button>
+                     <!-- Script do SweetAlert2 -->
+                     <script>
+                        const botaoFinalizarCompra = document.querySelector('.submit-order');
+                        botaoFinalizarCompra.addEventListener('click', function(event) {
+                        event.preventDefault(); 
+                        
+                         // Exibe o SweetAlert2
+                        Swal.fire({
+                        title: 'Tem certeza que deseja finalizar a compra?',
+                        text: 'Verique se os dados estão corretos.',
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonText: 'Sim, continuar',
+                        cancelButtonText: 'Cancelar',
+                        }).then((result) => {
+                        if (result.isConfirmed) {
+                        Swal.fire(
+                        'Compra finalizada!',
+                        'Sua compra foi realizada com sucesso.',
+                        'success'
+                        ); 
+                        }
+                        });
+                        });       
+                     </script>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <footer class="footer">
+         <div class="footer-content">
+            <p><a href="#">CONTATO</a></p>
+            <p><a href="#">Termos & Condições</a></p>
+            <p><a href="#">Trocas & Devoluções</a></p>
+         </div>
+      </footer>
+
+      <script src="js/script.js"></script>
+      <script src="js/checkout.js"></script>
+   </body>
+</html>

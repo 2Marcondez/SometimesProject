@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sometimes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleProduto.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <header>
+        <nav>
+
+            <!-- cart lateral - -->
+
+            <a href="/" class="icon-cart" onclick="toggleCartMenu(); return false;" title="Carrinho">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                </svg>
+              </a>
+
+              <div id="cartMenu" class="cart-menu">
+                <div class="cart-menu-content">
+                  <h2>Carrinho  </h2>
+                  <div id="cartItems">
+                  </div>
+                  <div class="cart-menu-buttons">
+                  <button onclick="closeCartMenu()">Fechar</button>
+                  <button onclick="goToCart()">Ir para o Carrinho</button>
+                </div>
+              </div>
+            </div>
+            
+            <a class="logo" href="/"><img src="imgs/somelogo.png" alt="logo"></a>
+            <div class="menu-mobile" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/shop.html">SHOP</a></li>
+                <li><a href="/login.html">CONTA</a></li> 
+                <li><a href="/sobre.html">SOBRE</a></li>
+                <li><a href="/cart.html">CARRINHO</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+
+<main>
+    <div class="produto">
+        <h1>BE YOURSELF</h1>
+        <div class="produto-item">
+            <img src="imgsRoupas/camisa3.PNG" alt="T Shirt Moderna" class="produto-img">
+            <div class="produto-info">
+                <h2>Sun Faded Basics Tee </h2>
+                <p class="price">350,00 BRL</p>
+                <div class="size">
+                    <label for="size">Tamanho:</label>
+                    <div class="size-options">
+                        <div class="size-option" data-size="P" title="Selecionar tamanho P">P</div>
+                        <div class="size-option" data-size="M" title="Selecionar tamanho M">M</div>
+                        <div class="size-option" data-size="G" title="Selecionar tamanho G">G</div>
+                        <div class="size-option" data-size="GG" title="Selecionar tamanho GG">GG</div>
+                    </div>
+                    <button class="add-to-cart">Adicionar ao carrinho</button>
+                </div>
+                <p class="descricao">A Sun Faded Basics Tee - Red é fabricada em malha premium 100% algodão com alta gramatura de 270 GSM. 
+                    Com modelagem relaxed e gola de 2,5 cm, a peça exibe um visual vintage, 
+                    com desbotamento leve e pequenos puídos na gola, mangas e barras. 
+                    A camiseta conta com uma pequena estampa em silk na parte frontal e um detalhe em pedra turquesa próximo à gola na parte traseira.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p><a href="#">CONTATO</a></p>
+            <p><a href="#">Termos & Condições</a></p>
+            <p><a href="#">Trocas & Devoluções</a></p>
+        </div>
+    </footer>
+
+    <script src="js/product.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

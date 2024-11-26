@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Sometimes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleShop.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <a href="cart.html" class="icon-cart" onclick="alert('Redirecionando para o carrinho')" title="Carrinho">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                </svg>
+            </a>
+
+            <a class="logo" href="/"><img src="imgs/somelogo.png" alt="logo"></a>
+            <div class="menu-mobile" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/shop.html">SHOP</a></li>
+                <li><a href="/login.html">CONTA</a></li> 
+                <li><a href="/sobre.html">SOBRE</a></li>
+                <li><a href="/cart.html">CARRINHO</a></li>
+            </ul>    
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="shop">
+            <h1>BE YOURSELF</h1>
+            <div class="shop-grid">
+                <div class="shop-item">
+                    <a href="produto1.html"> <!-- link pro html dos produtossssss -->
+                        <img src="imgsRoupas/camisa1.PNG" alt="Item 1">
+                    </a>
+                    <div class="item-info">
+                        <h2>Recreational Air Brush Tee </h2>
+                        <div class="price">
+                            <p>299 BRL</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PRA COLOCAR MAIS -->
+                <div class="shop-item">
+                    <a href="produto2.html"> 
+                        <img src="imgsRoupas/camisa2.PNG" alt="Item 3">
+                    </a>
+                    <div class="item-info">
+                        <h2>Electronic Mantra Tee</h2>
+                        <div class="price">
+                            <p>350 BRL</p>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- PRA COLOCAR MAIS -->
+               <div class="shop-item">
+                <a href="produto3.html"> 
+                    <img src="imgsRoupas/camisa3.PNG" alt="Item 3">
+                </a>
+                <div class="item-info">
+                    <h2>Sun Faded Basics Tee</h2>
+                    <div class="price">
+                        <p>350 BRL</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p><a href="#">CONTATO</a></p>
+            <p><a href="#">Termos & Condições</a></p>
+            <p><a href="#">Trocas & Devoluções</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

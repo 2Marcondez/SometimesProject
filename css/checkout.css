@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fundo branco para toda a página */
+    color: #333; /* Texto escuro */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff; /* Fundo branco */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.checkout {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.checkout-left, .checkout-right {
+    background-color: #fff; /* Fundo branco para ambas as seções */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    width: 48%;
+    border: 1px solid #eee; /* Linha fina para separar visualmente */
+}
+
+.checkout-left {
+    border-right: none; /* Remove a linha direita */
+}
+
+.checkout-left h2, .checkout-right h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product {
+    display: flex;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product-info {
+    flex: 1;
+    padding: 15px;
+}
+
+.product-info h3 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+.checkout-info {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.checkout-info h3 {
+    font-size: 24px;
+    color: #000000ad;
+}
+
+.checkout-right form label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    display: block;
+    color: #000000;
+}
+
+.checkout-right form input,
+.checkout-right form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+.checkout-right form input:focus,
+.checkout-right form select:focus {
+    border-color: #333; /* Foco mais intenso para facilitar visualização */
+}
+
+.save-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.save-info input {
+    margin-right: 10px;
+}
+
+button.submit-order {
+    background-color: #000000; /* Cor preta para o botão */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 1px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.checkout-right h3 {
+    font-size: 22px;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.checkout-right form input[type="month"] {
+    width: 45%;
+    display: inline-block;
+}
+
+.checkout-right form input[type="text"], 
+.checkout-right form input[type="email"] {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .checkout {
+        flex-direction: column;
+    }
+
+    .checkout-left, .checkout-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .checkout-left {
+        border-right: none;
+    }
+
+    .checkout-summary h3 {
+        font-size: 22px;
+    }
+
+    .checkout-right form input[type="month"] {
+        width: 100%;
+    }
+}
+
+
+
+.checkout-summary h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.order-item-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.order-item-info h3 {
+    font-size: 20px;
+    font-weight: 200;
+    color: #333;
+}
+
+.order-item-info p {
+    font-size: 12x;
+    color: #777;
+}
+
+.order-total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+    color: #333;
+}
+
+.order-total h3 {
+    color: #000000;
+}
+

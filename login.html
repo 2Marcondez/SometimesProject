@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sometimes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleLogin.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/"><img src="imgs/somelogo.png" alt="logo"></a>
+            <div class="menu-mobile" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/shop.html">SHOP</a></li>
+                <li><a href="/login.html">CONTA</a></li> 
+                <li><a href="/sobre.html">SOBRE</a></li>
+                <li><a href="/cart.html">CARRINHO</a></li>
+            </ul>            
+        </nav>
+    </header>
+    <main>
+        <div class="login">
+            <h1>Conta</h1>
+            <form action="#" method="POST">
+                <div class="form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" title="Digite um e-mail válido" name="email" required >
+                </div>
+                <div class="form">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="button">Entrar</button>
+                <button type="button" class="button2" onclick="window.location.href='registro.html'">Criar conta</button>
+            </form>
+            <p class="forgot-password"><a href="#">Esqueceu a senha?</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p><a href="#">CONTATO</a></p>
+            <p><a href="#">Termos & Condições</a></p>
+            <p><a href="#">Trocas & Devoluções</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
