@@ -46,7 +46,6 @@ function validarFormulario(event) {
 
     // Verificar se os campos obrigatórios foram preenchidos
     if (!nome || !email || !senha || !cpf) {
-        // Usando SweetAlert para o aviso de campos obrigatórios
         Swal.fire({
             title: 'Atenção!',
             text: 'Por favor, preencha todos os campos obrigatórios.',
@@ -117,6 +116,8 @@ function validarFormulario(event) {
             }).then(() => {
                 window.location.href = 'shop.html';
             });
+            // Enviar e-mail após sucesso na validação
+            sendMail(nome, email);  // Chamando a função sendMail para enviar o e-mail
         } else {
             // Caso haja erro no registro
             Swal.fire({

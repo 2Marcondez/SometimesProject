@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-    color: #888888; 
+    color: #000000; 
     transform: translateY(-2px); 
 }
 

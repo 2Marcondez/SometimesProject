@@ -13,12 +13,26 @@
     <header>
         <nav>
 
-            <a href="cart.html" class="icon-cart" onclick="alert('Redirecionando para o carrinho')" title="Carrinho">
+            <!-- cart lateral - -->
+
+            <a href="/" class="icon-cart" onclick="toggleCartMenu(); return false;" title="Carrinho">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
                   <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
                 </svg>
-            </a>
+              </a>
 
+              <div id="cartMenu" class="cart-menu">
+                <div class="cart-menu-content">
+                  <h2>Carrinho  </h2>
+                  <div id="cartItems">
+                  </div>
+                  <div class="cart-menu-buttons">
+                  <button onclick="closeCartMenu()">Fechar</button>
+                  <button onclick="goToCart()">Ir para o Carrinho</button>
+                </div>
+              </div>
+            </div>
+            
             <a class="logo" href="/"><img src="imgs/somelogo.png" alt="logo"></a>
             <div class="menu-mobile" id="menu-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -30,8 +44,7 @@
                 <li><a href="/login.html">CONTA</a></li> 
                 <li><a href="/sobre.html">SOBRE</a></li>
                 <li><a href="/cart.html">CARRINHO</a></li>
-            </ul>    
-
+            </ul>            
         </nav>
     </header>
 

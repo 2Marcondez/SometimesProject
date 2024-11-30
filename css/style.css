@@ -13,6 +13,10 @@ body {
     background-color: #ffffff;     
     color: #000000; }
 
+.icon-cart{
+    color: black;
+}
+
 a {
     color: #000000;     
     text-decoration: none;
@@ -206,18 +210,23 @@ h2 {
     color: rgb(0, 0, 0); /
 }
 
+a {
+    color: white;
+}
+
+
 .button-container {
     margin-top: 10px;
 }
 
 button {
-    background-color: #acacac; 
+    background-color: #000000; 
     color: #ffffff; 
     border: none;
     padding: 10px 20px;
     border-radius: 1px;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0px;
     font-weight: 300;
 }
 
