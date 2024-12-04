@@ -108,7 +108,7 @@ main {
 }
 
 .banner {
-    background: url("../../../../../../imgs/SOMETIMES.png") no-repeat center center;
+    background: url("imgs/SOMETIMES.png") no-repeat center center;
     background-size: cover;
     height: 89vh;
     z-index: 1;
