@@ -9,3 +9,7 @@ Tecnologias Utilizadas - O projeto foi desenvolvido utilizando as seguintes tecn
 Desenvolvido por [Murilo dos Santos Marcondes]
 
 Requisitos para rodar o projeto: - Node.js instalado, MySQL configurado com o banco de dados do projeto, NPM para instalação das dependências do projeto, Vscode.
+
+PowerPoint - https://www.canva.com/design/DAGYAvUwVdg/vGBwImSlDKOkml0G2c1DtA/view?utm_content=DAGYAvUwVdg&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
+YT Funcionalidades - https://www.youtube.com/watch?v=KJMNmMwUYPY
